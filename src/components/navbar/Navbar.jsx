@@ -3,9 +3,9 @@ import * as Style from './Style'
 
 const Navbar = () => {
   return (
-    <Style.Con>
-        
-    </Style.Con>
+    <Style.Header>
+
+    </Style.Header>
   )
 }
 
