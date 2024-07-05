@@ -1,10 +1,30 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Gilroy Light';
+  src: url('./assets//font/Gilroy-Light300.ttf');
+  font-weight: normal;
+  font-style: normal;
 
-body{
+}
+
+@font-face {
+  font-family: 'Gilroy Bold';
+  src: url('./assets//font/Gilroy-ExtraBold.otf');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+body {
+  font-family: 'Gilroy Light';
   background-color: #100e09;
+  color: #F5F4EB ;
+  width: 100%;
+  overflow-x: hidden;
 }

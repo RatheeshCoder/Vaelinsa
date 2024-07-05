@@ -19,7 +19,7 @@ export const Buttontext = styled.div`
   color: #FFFFFF;
   height: 25px;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1.5rem;
   line-height: 24.6px;
 
 
