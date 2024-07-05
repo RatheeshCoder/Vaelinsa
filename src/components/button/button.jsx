@@ -7,6 +7,7 @@ const Button = ({
   Style = {},
   textStyle = {},
   background,
+  textSize,
 }) => {
   const handleClick = async () => {
     try {
@@ -21,7 +22,7 @@ const Button = ({
       onClick={handleClick}
       style={{ ...Style, background }}
     >
-      <style.Buttontext style={textStyle}>
+      <style.Buttontext style={{textStyle, textSize}}>
         {title}
       </style.Buttontext>
     </style.Buttonoutline>

@@ -17,11 +17,9 @@ border: 1px solid #fff;
 
 export const Buttontext = styled.div`
   color: #FFFFFF;
-  height: 25px;
+  height: fit-content;
   font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 24.6px;
-
-
+  font-size: ${props => props.textSize || '1rem' };
+  line-height: 1.5rem;
 `;
 

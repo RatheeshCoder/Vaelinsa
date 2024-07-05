@@ -6,7 +6,7 @@ import HomeIndex from "./pages/home/HomeIndex";
 function App() {
 
   return (
-    <>
+    <> 
       <BrowserRouter>
         <Navbar />
         <Routes>
