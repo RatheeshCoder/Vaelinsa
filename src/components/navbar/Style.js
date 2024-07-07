@@ -6,14 +6,13 @@ export const Header = styled.header`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 1rem 0;
+  /* margin: 1r   em 0; */
   background: rgba(16, 14, 9, 0.5);
-  border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(14.1px);
   -webkit-backdrop-filter: blur(14.1px);
   z-index: 99999999;
-  position: sticky;
+  position: fixed;
   top: 0;
   @media (max-width: 780px) {
     display: none;

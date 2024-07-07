@@ -24,7 +24,7 @@ export const TestimonialContainer = styled.div`
   max-width: 1280px;
   height: 600px;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 
   @media (max-width: 1280px) {
     height: 500px;

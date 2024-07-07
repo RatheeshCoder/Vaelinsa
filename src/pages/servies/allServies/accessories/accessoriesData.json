@@ -1,0 +1,63 @@
+{
+    "title": "Gallery",
+    "description": "This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text.",
+   
+    "items": [
+      {
+        "id": 1,
+        "src": "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600",
+        "alt": "Photo by Minh Pham",
+        "label": "VR",
+        "large": false
+      },
+      {
+        "id": 2,
+        "src": "https://images.unsplash.com/photo-1542759564-7ccbb6ac450a?auto=format&q=75&fit=crop&w=1000",
+        "alt": "Photo by Magicle",
+        "label": "Tech",
+        "large": true
+      },
+      {
+        "id": 3,
+        "src": "https://images.unsplash.com/photo-1610465299996-30f240ac2b1c?auto=format&q=75&fit=crop&w=1000",
+        "alt": "Photo by Martin Sanchez",
+        "label": "Dev",
+        "large": true
+      },
+      {
+        "id": 4,
+        "src": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&q=75&fit=crop&w=600",
+        "alt": "Photo by Lorenzo Herrera",
+        "label": "Retro",
+        "large": false
+      },
+      {
+        "id": 5,
+        "src": "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600",
+        "alt": "Photo by Minh Pham",
+        "label": "VR",
+        "large": false
+      },
+      {
+        "id": 6,
+        "src": "https://images.unsplash.com/photo-1542759564-7ccbb6ac450a?auto=format&q=75&fit=crop&w=1000",
+        "alt": "Photo by Magicle",
+        "label": "Tech",
+        "large": true
+      },
+      {
+        "id": 7,
+        "src": "https://images.unsplash.com/photo-1610465299996-30f240ac2b1c?auto=format&q=75&fit=crop&w=1000",
+        "alt": "Photo by Martin Sanchez",
+        "label": "Dev",
+        "large": true
+      },
+      {
+        "id": 8,
+        "src": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&q=75&fit=crop&w=600",
+        "alt": "Photo by Lorenzo Herrera",
+        "label": "Retro",
+        "large": false
+      }
+    ]
+  }

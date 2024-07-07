@@ -1,4 +1,3 @@
-// OurServices.js
 import React from 'react';
 import * as Style from './Style';
 import Button from '../../../components/button/button';
@@ -17,7 +16,7 @@ const OurServices = () => {
       <Style.RightContainer>
         <Card
           background='transparent'
-          style={{ border: '1px solid #fff', borderRadius: '.5rem' }}
+          Style={{ border: '1px solid #fff', borderRadius: '.5rem' }}
           headStyle={{ color: '#F5F4EB' }}
           image={CardImg1}
           headline='Video Editing'
@@ -25,7 +24,7 @@ const OurServices = () => {
         />
         <Card
           background='transparent'
-          style={{ border: '1px solid #fff', borderRadius: '.5rem' }}
+          Style={{ border: '1px solid #fff', borderRadius: '.5rem' }}
           headStyle={{ color: '#F5F4EB' }}
           image={CardImg1}
           headline='Video Editing'
@@ -33,7 +32,7 @@ const OurServices = () => {
         />
         <Card
           background='transparent'
-          style={{ border: '1px solid #fff', borderRadius: '.5rem' }}
+          Style={{ border: '1px solid #fff', borderRadius: '.5rem' }}
           headStyle={{ color: '#F5F4EB' }}
           image={CardImg1}
           headline='Video Editing'
@@ -41,7 +40,7 @@ const OurServices = () => {
         />
         <Card
           background='transparent'
-          style={{ border: '1px solid #fff', borderRadius: '.5rem' }}
+          Style={{ border: '1px solid #fff', borderRadius: '.5rem' }}
           headStyle={{ color: '#F5F4EB' }}
           image={CardImg1}
           headline='Video Editing'
