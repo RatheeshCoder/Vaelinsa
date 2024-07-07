@@ -28,3 +28,13 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
+
+.spline-watermark{
+  display: none !important;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+

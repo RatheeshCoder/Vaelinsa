@@ -1,14 +1,22 @@
 import React from 'react'
 import AboutUs from './aboutUs/AboutUs'
-import OurServies from './ourServies/OurServies'
+import Marquee from './marquee/Marquee'
 import Testimonials from './testimonials/Testimonials'
-
+import LetConnect from './letConnect/LetConnect'
+import OurProducts from './ourProducts/OurProducts'
+import OurServices from './ourServices/OurServices'
+import CTA from './ctaSection/CTA'
 const HomeIndex = () => {
   return (
     <>
-    <AboutUs/>
-    {/* <OurServies/> */}
-    <Testimonials/>
+      <LetConnect />
+      <AboutUs />
+      <OurProducts />
+      <Marquee />
+      <Testimonials />
+      <OurServices/>
+      <CTA/>
+
     </>
   )
 }

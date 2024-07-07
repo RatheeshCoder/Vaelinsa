@@ -1,0 +1,139 @@
+.carousel {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: relative;
+  justify-items: center;
+  align-items: center;
+  height: 100vh;
+  grid-template-areas: "A0 A1 A2";
+
+}
+
+.cardWrapper {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+
+.card {
+  height: 400px;
+  width: 90%;
+  background: transparent;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.carousel-button:first-child {
+  left: 10px;
+}
+
+.carousel-button:last-child {
+  right: 10px;
+}
+
+@media (max-width: 1200px) {
+  .cardWrapper {
+    height: 350px;
+  }
+  
+  .card {
+    height: 350px;
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 992px) {
+  .cardWrapper {
+    height: 300px;
+  }
+  
+  .card {
+    height: 300px;
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cardWrapper {
+    height: 250px;
+  }
+  
+  .card {
+    height: 250px;
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel {
+    grid-template-columns: 1fr;
+    grid-template-areas: "A1";
+  }
+
+  .cardWrapper {
+    position: relative;
+    height: 200px;
+  }
+  
+  .card {
+    height: 200px;
+    font-size: 30px;
+  }
+  
+  .carousel-button {
+    top: auto;
+    bottom: 10px;
+    transform: translateY(0);
+  }
+
+  .carousel-button:first-child {
+    left: 50px;
+  }
+
+  .carousel-button:last-child {
+    right: 50px;
+  }
+}
+
+
+.comingSoon{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    width: 100%;
+    z-index: -1;
+
+
+}
+
+.comingSoon h1{
+  color: transparent;
+  font-family: 'Gilroy Bold';
+font-size: 10rem;
+-webkit-text-stroke: 2px #F5F4EB;
+text-transform: uppercase;
+}
+
+.card img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transform: scale(1.5);
+}

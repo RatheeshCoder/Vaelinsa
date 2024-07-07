@@ -7,7 +7,14 @@ export const Header = styled.header`
   justify-content: space-around;
   align-items: center;
   margin: 1rem 0;
-
+  background: rgba(16, 14, 9, 0.5);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(14.1px);
+  -webkit-backdrop-filter: blur(14.1px);
+  z-index: 99999999;
+  position: sticky;
+  top: 0;
   @media (max-width: 780px) {
     display: none;
   }
@@ -19,7 +26,7 @@ export const LeftMenu = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   ul {
     display: flex;
     list-style: none;
@@ -31,11 +38,11 @@ export const LeftMenu = styled.div`
       font-weight: 500;
 
       &::after {
-        content: '';
+        content: "";
         height: 0.2rem;
         width: 0;
         border-radius: 1rem;
-        background: #F5F4EB;
+        background: #f5f4eb;
         display: block;
         margin-bottom: 0.5rem;
         transition: width 0.3s linear;
@@ -70,18 +77,18 @@ export const RightMenu = styled.div`
       cursor: pointer;
       font-size: 1rem;
       font-weight: 500;
-      
+
       button {
-        padding: .5rem 1.5rem;
+        padding: 0.5rem 1.5rem;
         background: transparent;
-        border: 1px solid #F5F4EB;
+        border: 1px solid #f5f4eb;
         outline: none;
         cursor: pointer;
         transition: color 0.3s linear;
       }
 
       &:last-child button {
-        background: #F5F4EB;
+        background: #f5f4eb;
         color: #000 !important;
       }
     }
@@ -113,7 +120,7 @@ export const PhoneLeftMenu = styled.div`
   width: 40%;
   height: 100vh;
   display: flex;
-  background-color: #F5F4EB;
+  background-color: #f5f4eb;
   color: #100e09;
   justify-content: start;
   align-items: start;
@@ -121,7 +128,8 @@ export const PhoneLeftMenu = styled.div`
   padding: 2rem;
   top: 0;
   right: 0;
-  transform: ${({ isMenuOpen }) => (isMenuOpen ? 'translateX(0)' : 'translateX(100%)')};
+  transform: ${({ isMenuOpen }) =>
+    isMenuOpen ? "translateX(0)" : "translateX(100%)"};
   transition: transform 0.3s ease-in-out;
 
   ul {
@@ -138,7 +146,7 @@ export const PhoneLeftMenu = styled.div`
       font-weight: 500;
 
       &::after {
-        content: '';
+        content: "";
         height: 0.2rem;
         width: 0;
         border-radius: 1rem;
@@ -162,11 +170,11 @@ export const MenuIcon = styled.div`
   justify-content: center;
   align-items: center;
 
-    button {
-        background: transparent;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        z-index: 99;
-      }
+  button {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 99;
+  }
 `;
