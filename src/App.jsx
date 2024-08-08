@@ -5,8 +5,10 @@ import HomeIndex from "./pages/home/HomeIndex";
 import Footer from "./components/footer/Footer";
 import ServiesIndex from "./pages/servies/ServiesIndex";
 import ContactSection from "./pages/contact/ContactSection";
-import AllServies from "./pages/servies/allServies/AllServies";
-import AboutUS from "./pages/aboutus/AboutIndex";
+import AccessoriesIndex from "./pages/servies/allServies/accessories/AccessoriesIndex";
+import ProductMain from "./pages/products/OurProducts";
+import OurProduct from "./pages/servies/ourProoduct/OurProduct";
+import AboutIndex from "./pages/aboutus/AboutIndex";
 function App() {
 
   return (
@@ -18,8 +20,15 @@ function App() {
           {/* <Route path="/services" element={<ServiesIndex/>} /> */}
 
           <Route path="/contact" element={<ContactSection/>} />
-          <Route path="/services" element={<AllServies/>} />
-          <Route path="/about" element={<AboutUS/>}/>
+          <Route path="/services" element={<ServiesIndex/>} />
+          <Route path="/servies/accessories" element={<AccessoriesIndex/>} />
+          <Route path="/servies/OurProduct" element={<OurProduct/>} />
+
+
+          <Route path="/products" element={<ProductMain/>} />
+          <Route path="/aboutus" element={<AboutIndex/>} />
+
+
           <Route path="*" element={<h1>Not Found</h1>} />
         </Routes>
         <Footer/>

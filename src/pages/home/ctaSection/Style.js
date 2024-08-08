@@ -39,4 +39,20 @@ height: 100%;
 display: flex;
 justify-content: center;
 align-items: center;
+<<<<<<< Updated upstream
+=======
+position: relative;
+
+.hide{
+    width: 150px;
+    height:50px;
+    position: absolute;
+    bottom: 3%;
+    right: 2%;
+    background-color: #F5F4EB;
+
+}
+
+
+>>>>>>> Stashed changes
 `
