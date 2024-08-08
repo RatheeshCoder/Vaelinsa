@@ -6,6 +6,7 @@ import Footer from "./components/footer/Footer";
 import ServiesIndex from "./pages/servies/ServiesIndex";
 import ContactSection from "./pages/contact/ContactSection";
 import AllServies from "./pages/servies/allServies/AllServies";
+import AboutUS from "./pages/aboutus/AboutIndex";
 function App() {
 
   return (
@@ -15,9 +16,10 @@ function App() {
         <Routes>
           <Route path="/" element={  <HomeIndex/> } />
           {/* <Route path="/services" element={<ServiesIndex/>} /> */}
+
           <Route path="/contact" element={<ContactSection/>} />
           <Route path="/services" element={<AllServies/>} />
-
+          <Route path="/about" element={<AboutUS/>}/>
           <Route path="*" element={<h1>Not Found</h1>} />
         </Routes>
         <Footer/>

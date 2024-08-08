@@ -3,19 +3,20 @@ import * as style from "./Style";
 
 const Title = ({
   heading,
-  text,
+  HeadText,
   Style = {},
   textStyle = {},
   headStyle ={},
   background,
   fontStyle,
+  color,
 })=> {
   return (
-    <style.Title style={{...Style, background}}>
+    <style.Title style={{...Style, background,}}color={color} >
       <style.TitleText style={{textStyle, fontStyle }} >
-        {text}
+        {HeadText}
       </style.TitleText>
-      <style.TitleHeading style={{headStyle, fontStyle}}>
+      <style.TitleHeading style={{headStyle, fontStyle}} >
         {heading}
       </style.TitleHeading>
     </style.Title>

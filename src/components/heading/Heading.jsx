@@ -8,10 +8,11 @@ const Heading = ({
     background,
     fontStyle,
     lineHeight,
+    fontSize,
 }) => {
     return (
         <style.Heading style={{...Style, background}}>
-            <style.HeadingText style={{textStyle, fontStyle, lineHeight}}>
+            <style.HeadingText style={{textStyle, fontStyle,fontSize, lineHeight}}>
                 {title}
             </style.HeadingText>
         </style.Heading>

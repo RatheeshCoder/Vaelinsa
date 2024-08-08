@@ -6,7 +6,7 @@ export const Card = styled.div`
   background-color: ${props => props.background || '#fff'};
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: ${(props) => props.alignItems || "flex-start"};
   padding: 5% 10%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 0.2rem;
@@ -50,10 +50,10 @@ export const CardImage = styled.img`
 
 export const CardHeadline = styled.h3`
   color: #000;
-  font-size: 1.4rem;
+  font-size: ${props => props.fontSize || '1.4rem'};
   font-style: ${props => props.fontStyle || 'Gilroy Bold'};
   font-weight: 900;
-  margin: 1rem 0;
+  margin: 0.8rem 0;
 
   @media (max-width: 768px) {
     font-size: 1.2rem;

@@ -6,11 +6,11 @@ export const Title = styled.div`
   display: flex;
   align-items: start;
   flex-direction: column;
-
+  color:${props => props.color || '#fff'};
 `;
 
 export const TitleText = styled.p`
-  color: #fff;
+
   font-size: 0.8rem;
   font-style: ${props => props.fontStyle || 'Gilroy light'};
   font-weight: 500;
@@ -30,7 +30,7 @@ export const TitleText = styled.p`
 `;
 
 export const TitleHeading = styled.h3`
-  color: #ffffff;
+
   font-size: 3rem;
   font-style: ${props => props.fontStyle || 'Gilroy Bold'};
   font-weight: 900;

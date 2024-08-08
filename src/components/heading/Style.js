@@ -10,7 +10,7 @@ export const Heading = styled.div`
 
 export const HeadingText = styled.h1`
   color: #FFFFFF;
-  font-size: 5.5rem;
+  font-size: ${props => props.fontSize || '5.5rem'};
   line-height: ${props => props.lineHeight || '1.7rem'};
   font-style: ${props => props.fontStyle || 'Gilroy Bold'};
   font-weight: 900;
@@ -24,7 +24,7 @@ export const HeadingText = styled.h1`
     font-size: 4rem;
     line-height: ${props => props.lineHeight || '1.3rem'};
   }
-
+  
   @media (max-width: 360px) {
     font-size: 3rem;
     line-height: ${props => props.lineHeight || '1.1rem'};
