@@ -1,17 +1,28 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css'
-
+import Navbar from "./components/navbar/Navbar";
+import HomeIndex from "./pages/home/HomeIndex";
+import Footer from "./components/footer/Footer";
+import ServiesIndex from "./pages/servies/ServiesIndex";
+import ContactSection from "./pages/contact/ContactSection";
+import AllServies from "./pages/servies/allServies/AllServies";
+import AboutUS from "./pages/aboutus/AboutIndex";
 function App() {
 
   return (
-    <>
+    <> 
       <BrowserRouter>
-      
-      <Routes>
-        {/* <Route path="/" element={<h1>Home</h1>} />
-        <Route path="about" element={<h1>About</h1>} />
-        <Route path="*" element={<h1>Not Found</h1>} /> */}
-      </Routes>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={  <HomeIndex/> } />
+          {/* <Route path="/services" element={<ServiesIndex/>} /> */}
+
+          <Route path="/contact" element={<ContactSection/>} />
+          <Route path="/services" element={<AllServies/>} />
+          <Route path="/about" element={<AboutUS/>}/>
+          <Route path="*" element={<h1>Not Found</h1>} />
+        </Routes>
+        <Footer/>
       </BrowserRouter>
     </>
   )

@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "image": "/images/pic1.png",
+      "title": "Service 1"
+      
+    },
+    {
+      "id": 2,
+      "image": "/images/pic2.png",
+      "title": "Coming Soon"
+    },
+    {
+      "id": 3,
+      "image": "/images/pic3.png",
+      "title": "Service 3"
+    },
+    {
+      "id": 4,
+      "image": "/images/pic4.png",
+      "title": "Coming Soon"
+    },
+    {
+      "id": 5,
+      "image": "/images/pic1.png",
+      "title": "Service 5"
+    },
+    {
+      "id": 6,
+      "image": "/images/pic2.png",
+      "title": "Coming Soon"
+    }
+  ]
