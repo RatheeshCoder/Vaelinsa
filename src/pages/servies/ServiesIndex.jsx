@@ -1,11 +1,11 @@
 import React from 'react'
 import HeroSection from './heroSection/HeroSection'
-import AllServies from './allServies/accessories/Accessories'
+import ServiesCard from './serviesCard/ServiesCard'
 const ServiesIndex = () => {
   return (
     <main>
       <HeroSection/>
-     {/* <AllServies/> */}
+     <ServiesCard/>
     </main>
   )
 }

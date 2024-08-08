@@ -36,12 +36,15 @@ export const Header = styled.div`
 export const HeaderContent = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 3rem;
 `;
 
 export const Title = styled.h2`
   font-size: 1.5rem;
   font-weight: bold;
+  width: 100%;
+  text-align: center !important;
   @media (min-width: 1024px) {
     font-size: 1.875rem;
   }
@@ -79,6 +82,7 @@ export const GalleryItem = styled.a`
   overflow: hidden;
   background-color: #f3f4f6;
   border-radius: 0.5rem;
+  padding-right: 1rem;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   @media (min-width: 768px) {
     height: 20rem;
@@ -144,6 +148,12 @@ export const ItemLabel = styled.span`
   margin-left: 1rem;
   color: white;
   font-size: 0.875rem;
+   background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+
   @media (min-width: 768px) {
     margin-left: 1.25rem;
     font-size: 1.125rem;
@@ -165,4 +175,42 @@ export const PopupImage = styled.img`
   max-height: 90%;
   border-radius: 0.5rem;
 
+`;
+
+export const ItemPrice = styled.span`
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  margin-left: 1rem;
+  color: white;
+  font-size: 0.875rem;
+   background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+
+  @media (min-width: 768px) {
+    margin-left: 1.25rem;
+    font-size: 1.125rem;
+  }
+`;
+
+export const ItemDiscount = styled.span`
+ position: relative;
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  margin-left: 1rem;
+  color: white;
+  font-size: 0.875rem;
+   background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+
+  @media (min-width: 768px) {
+    margin-left: 1.25rem;
+    font-size: 1.125rem;
+  }
 `;

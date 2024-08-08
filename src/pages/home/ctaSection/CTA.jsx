@@ -14,6 +14,10 @@ const CTA = () => {
 
         <Style.RightSection>
         <iframe src='https://my.spline.design/earthdayandnight-9bd364ef703ba4d3f999effad8659eae/' frameborder='0' width='100%' height='100%'></iframe>
+<<<<<<< Updated upstream
+=======
+        <div className='hide'></div>
+>>>>>>> Stashed changes
         </Style.RightSection>
     </Style.CtaSectionWrapper>
   )

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import * as Style from './Style';
 import accessoriesData from './accessoriesData.json';
 
-const Accessories  = () => {
+const Accessories = () => {
   const [popupImage, setPopupImage] = useState(null);
   const [data, setData] = useState(null);
 
@@ -21,7 +21,7 @@ const Accessories  = () => {
   };
 
   const handleShareClick = (item) => {
-    const text = `Check out this item: ${item.label}\nDescription: ${item.description}\nImage: ${item.src}`;
+    const text = `Check out this item: ${item.label}\nDescription: ${item.description}\nPrice: $${item.price}\nDiscount: ${item.discount}%\nImage: ${item.src}`;
     const encodedText = encodeURIComponent(text);
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedText}`;
     window.open(whatsappUrl, '_blank');
@@ -35,7 +35,6 @@ const Accessories  = () => {
         <Style.Header>
           <Style.HeaderContent>
             <Style.Title>{data.title}</Style.Title>
-            <Style.Description>{data.description}</Style.Description>
           </Style.HeaderContent>
         </Style.Header>
         <Style.GalleryGrid>
@@ -43,7 +42,11 @@ const Accessories  = () => {
             <Style.GalleryItem key={item.id} large={item.large}>
               <Style.GalleryImage src={item.src} loading="lazy" alt={item.alt} />
               <Style.Overlay />
+              <div style={{width:'100%', display:'flex', flexDirection:'row', justifyContent:'space-between'}}>
               <Style.ItemLabel>{item.label}</Style.ItemLabel>
+              <Style.ItemPrice>Price: ₹{item.price}</Style.ItemPrice>
+              {/* <Style.ItemDiscount>Discount: {item.discount}%</Style.ItemDiscount> */}
+              </div>
               <Style.OverlayButtons className="overlay-buttons">
                 <button onClick={() => handleViewClick(item.src)}>View</button>
                 <button onClick={() => handleShareClick(item)}>Share</button>
@@ -61,4 +64,4 @@ const Accessories  = () => {
   );
 };
 
-export default Accessories ;
+export default Accessories;
